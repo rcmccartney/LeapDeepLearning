@@ -1,0 +1,151 @@
+training: epoch 250: processing batch   1 of  40 ... 0.10 s (492.9 images/s) err 0.1 err5 0.0
+training: epoch 250: processing batch   2 of  40 ... 0.10 s (507.8 images/s) err 0.1 err5 0.0
+training: epoch 250: processing batch   3 of  40 ... 0.10 s (499.3 images/s) err 0.1 err5 0.0
+training: epoch 250: processing batch   4 of  40 ... 0.09 s (535.2 images/s) err 0.1 err5 0.0
+training: epoch 250: processing batch   5 of  40 ... 0.10 s (515.3 images/s) err 0.1 err5 0.0
+training: epoch 250: processing batch   6 of  40 ... 0.10 s (524.7 images/s) err 0.1 err5 0.0
+training: epoch 250: processing batch   7 of  40 ... 0.09 s (532.6 images/s) err 0.1 err5 0.0
+training: epoch 250: processing batch   8 of  40 ... 0.09 s (546.3 images/s) err 0.1 err5 0.0
+training: epoch 250: processing batch   9 of  40 ... 0.09 s (551.7 images/s) err 0.1 err5 0.0
+training: epoch 250: processing batch  10 of  40 ... 0.09 s (534.9 images/s) err 0.1 err5 0.0
+training: epoch 250: processing batch  11 of  40 ... 0.09 s (534.5 images/s) err 0.1 err5 0.0
+training: epoch 250: processing batch  12 of  40 ... 0.10 s (482.4 images/s) err 0.1 err5 0.0
+training: epoch 250: processing batch  13 of  40 ... 0.10 s (524.2 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  14 of  40 ... 0.10 s (511.8 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  15 of  40 ... 0.09 s (529.1 images/s) err 0.1 err5 0.0
+training: epoch 250: processing batch  16 of  40 ... 0.10 s (525.8 images/s) err 0.1 err5 0.0
+training: epoch 250: processing batch  17 of  40 ... 0.09 s (532.8 images/s) err 0.1 err5 0.0
+training: epoch 250: processing batch  18 of  40 ... 0.09 s (550.8 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  19 of  40 ... 0.09 s (555.4 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  20 of  40 ... 0.10 s (497.6 images/s) err 0.1 err5 0.0
+training: epoch 250: processing batch  21 of  40 ... 0.09 s (526.5 images/s) err 0.1 err5 0.0
+training: epoch 250: processing batch  22 of  40 ... 0.10 s (511.9 images/s) err 0.1 err5 0.0
+training: epoch 250: processing batch  23 of  40 ... 0.09 s (536.8 images/s) err 0.1 err5 0.0
+training: epoch 250: processing batch  24 of  40 ... 0.10 s (518.3 images/s) err 0.1 err5 0.0
+training: epoch 250: processing batch  25 of  40 ... 0.09 s (528.4 images/s) err 0.1 err5 0.0
+training: epoch 250: processing batch  26 of  40 ... 0.09 s (544.5 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  27 of  40 ... 0.11 s (474.9 images/s) err 0.1 err5 0.0
+training: epoch 250: processing batch  28 of  40 ... 0.10 s (522.1 images/s) err 0.1 err5 0.0
+training: epoch 250: processing batch  29 of  40 ... 0.09 s (550.3 images/s) err 0.1 err5 0.0
+training: epoch 250: processing batch  30 of  40 ... 0.09 s (533.2 images/s) err 0.1 err5 0.0
+training: epoch 250: processing batch  31 of  40 ... 0.09 s (527.1 images/s) err 0.1 err5 0.0
+training: epoch 250: processing batch  32 of  40 ... 0.10 s (485.7 images/s) err 0.1 err5 0.0
+training: epoch 250: processing batch  33 of  40 ... 0.10 s (521.2 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  34 of  40 ... 0.10 s (507.0 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  35 of  40 ... 0.09 s (548.9 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  36 of  40 ... 0.09 s (527.5 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  37 of  40 ... 0.09 s (529.7 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  38 of  40 ... 0.09 s (550.4 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  39 of  40 ... 0.09 s (556.0 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  40 of  40 ... 0.08 s (192.1 images/s) err 0.0 err5 0.0
+validation: epoch 250: processing batch   1 of   5 ... 0.04 s (1419.0 images/s) err 14.2 err5 0.0
+validation: epoch 250: processing batch   2 of   5 ... 0.03 s (1487.3 images/s) err 11.8 err5 0.0
+validation: epoch 250: processing batch   3 of   5 ... 0.04 s (1396.5 images/s) err 11.4 err5 0.0
+validation: epoch 250: processing batch   4 of   5 ... 0.03 s (1468.2 images/s) err 12.5 err5 0.0
+validation: epoch 250: processing batch   5 of   5 ... 0.03 s (398.7 images/s) err 12.5 err5 0.0
+Printing confusion matrix..
+
+ans =
+
+Instance 16 wrong: actual 3 predicted 5
+
+
+
+ans =
+
+Instance 29 wrong: actual 1 predicted 3
+
+
+
+ans =
+
+Instance 36 wrong: actual 5 predicted 3
+
+
+
+ans =
+
+Instance 43 wrong: actual 3 predicted 5
+
+
+
+ans =
+
+Instance 53 wrong: actual 5 predicted 1
+
+
+
+ans =
+
+Instance 61 wrong: actual 1 predicted 3
+
+
+
+ans =
+
+Instance 68 wrong: actual 1 predicted 4
+
+
+
+ans =
+
+Instance 131 wrong: actual 2 predicted 4
+
+
+
+ans =
+
+Instance 145 wrong: actual 3 predicted 2
+
+
+
+ans =
+
+Instance 158 wrong: actual 5 predicted 2
+
+
+
+ans =
+
+Instance 162 wrong: actual 3 predicted 4
+
+
+
+ans =
+
+Instance 164 wrong: actual 5 predicted 3
+
+
+
+ans =
+
+Instance 165 wrong: actual 3 predicted 5
+
+
+
+ans =
+
+Instance 187 wrong: actual 1 predicted 5
+
+
+
+ans =
+
+Instance 189 wrong: actual 5 predicted 3
+
+
+
+ans =
+
+Instance 211 wrong: actual 1 predicted 4
+
+
+   28     0     0     0     1 
+    0    63     1     0     1 
+    2     0    30     0     3 
+    2     1     1    41     0 
+    1     0     3     0    34 
+
+ans = 
+
+    layers: {1x11 cell}

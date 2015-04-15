@@ -1,0 +1,203 @@
+net.layers{end+1} = struct('type', 'relu') ;
+net.layers{end+1} = struct('type', 'conv', ...
+                           'filters', f*randn(1,1,500,50, 'single'),...
+                           'biases', zeros(1,50,'single'), ...
+                           'stride', 1, ...
+                           'pad', 0) ;
+net.layers{end+1} = struct('type', 'relu') ;
+net.layers{end+1} = struct('type', 'conv', ...
+                           'filters', f*randn(1,1,50,5, 'single'),...
+                           'biases', zeros(1,5,'single'), ...
+                           'stride', 1, ...
+                           'pad', 0) ;
+net.layers{end+1} = struct('type', 'softmaxloss') ;
+
+training: epoch 250: processing batch   1 of  40 ... 0.09 s (579.2 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch   2 of  40 ... 0.09 s (558.5 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch   3 of  40 ... 0.09 s (570.4 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch   4 of  40 ... 0.09 s (576.2 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch   5 of  40 ... 0.08 s (591.2 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch   6 of  40 ... 0.09 s (570.5 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch   7 of  40 ... 0.09 s (586.2 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch   8 of  40 ... 0.09 s (580.5 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch   9 of  40 ... 0.09 s (573.4 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  10 of  40 ... 0.09 s (527.5 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  11 of  40 ... 0.09 s (584.3 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  12 of  40 ... 0.09 s (586.4 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  13 of  40 ... 0.08 s (592.2 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  14 of  40 ... 0.10 s (522.4 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  15 of  40 ... 0.09 s (562.9 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  16 of  40 ... 0.09 s (580.1 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  17 of  40 ... 0.09 s (587.6 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  18 of  40 ... 0.09 s (558.8 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  19 of  40 ... 0.08 s (593.2 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  20 of  40 ... 0.09 s (556.1 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  21 of  40 ... 0.09 s (575.6 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  22 of  40 ... 0.09 s (578.7 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  23 of  40 ... 0.08 s (592.5 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  24 of  40 ... 0.09 s (584.0 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  25 of  40 ... 0.09 s (577.8 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  26 of  40 ... 0.09 s (581.3 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  27 of  40 ... 0.08 s (602.5 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  28 of  40 ... 0.09 s (584.9 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  29 of  40 ... 0.08 s (594.7 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  30 of  40 ... 0.09 s (567.8 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  31 of  40 ... 0.08 s (589.6 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  32 of  40 ... 0.09 s (577.5 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  33 of  40 ... 0.09 s (586.8 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  34 of  40 ... 0.09 s (579.5 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  35 of  40 ... 0.09 s (534.5 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  36 of  40 ... 0.09 s (564.9 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  37 of  40 ... 0.09 s (566.4 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  38 of  40 ... 0.09 s (581.6 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  39 of  40 ... 0.08 s (600.1 images/s) err 0.0 err5 0.0
+training: epoch 250: processing batch  40 of  40 ... 0.07 s (201.2 images/s) err 0.0 err5 0.0
+validation: epoch 250: processing batch   1 of   5 ... 0.04 s (1386.9 images/s) err 13.5 err5 0.0
+validation: epoch 250: processing batch   2 of   5 ... 0.03 s (1534.1 images/s) err 11.4 err5 0.0
+validation: epoch 250: processing batch   3 of   5 ... 0.03 s (1595.7 images/s) err 10.7 err5 0.0
+validation: epoch 250: processing batch   4 of   5 ... 0.03 s (1484.0 images/s) err 11.9 err5 0.0
+validation: epoch 250: processing batch   5 of   5 ... 0.03 s (403.5 images/s) err 11.9 err5 0.0
+Printing confusion matrix..
+
+res =
+
+     []
+
+   28     0     1     0     0 
+    1    62     2     0     1 
+    2     0    30     1     4 
+    1     2     1    40     0 
+    1     0     1     0    34 
+
+ans = 
+
+    layers: {1x10 cell}
+
+>> cnn_train
+Error using cnn_train (line 27)
+Not enough input arguments.
+ 
+>> cnn_leap_binary
+Printing confusion matrix..
+
+res =
+
+     []
+
+
+ans =
+
+Instance 4 wrong
+
+
+
+ans =
+
+Instance 8 wrong
+
+
+
+ans =
+
+Instance 16 wrong
+
+
+
+ans =
+
+Instance 25 wrong
+
+
+
+ans =
+
+Instance 36 wrong
+
+
+
+ans =
+
+Instance 43 wrong
+
+
+
+ans =
+
+Instance 61 wrong
+
+
+
+ans =
+
+Instance 120 wrong
+
+
+
+ans =
+
+Instance 131 wrong
+
+
+
+ans =
+
+Instance 145 wrong
+
+
+
+ans =
+
+Instance 155 wrong
+
+
+
+ans =
+
+Instance 158 wrong
+
+
+
+ans =
+
+Instance 162 wrong
+
+
+
+ans =
+
+Instance 164 wrong
+
+
+
+ans =
+
+Instance 166 wrong
+
+
+
+ans =
+
+Instance 174 wrong
+
+
+
+ans =
+
+Instance 187 wrong
+
+
+
+ans =
+
+Instance 189 wrong
+
+
+   28     0     1     0     0 
+    1    62     2     0     1 
+    2     0    30     1     4 
+    1     2     1    40     0 
+    1     0     1     0    34 
+
+ans = 
+
+    layers: {1x10 cell}

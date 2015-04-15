@@ -1,0 +1,3 @@
+for i = 1:5,
+newimage = [ newimage; x.layers{1}.filters(:, :, 1, 4*(i-1) + 1 ) x.layers{1}.filters(:, :, 1, 4*(i-1) + 2 ) x.layers{1}.filters(:, :, 1, 4*(i-1) + 3 ) x.layers{1}.filters(:, :, 1, 4*(i-1) + 4 ) ]
+end
