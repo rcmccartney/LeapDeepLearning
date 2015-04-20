@@ -7,11 +7,7 @@ leapRange = [400, 400, 400];
 
 size = 1; %  need to change this for more rows of data
 index = 48 + (finger-1)*15;  % this is where x,y,z data for finger 1-5 is in the file
-mat = (cellfun(@str2double, [out(index), out(index+1), out(index+2)])-leapStart)*dim ./ leapRange;
-%mat = [mat; (cellfun(@str2double, [out(63), out(64), out(65)]) - leapStart)*dim/leapRange];
-%mat = [mat; (cellfun(@str2double, [out(78), out(79), out(80)]) - leapStart)*dim/leapRange];
-%mat = [mat; (cellfun(@str2double, [out(93), out(94), out(95)]) - leapStart)*dim/leapRange];
-%mat = [mat; (cellfun(@str2double, [out(108), out(109), out(110)]) - leapStart)*dim/leapRange];     
+mat = (cellfun(@str2double, [out(index), out(index+1), out(index+2)])-leapStart)*dim ./ leapRange;     
 
 mat = round(mat);
 %create pixels nearby these found points
