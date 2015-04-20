@@ -24,5 +24,9 @@ for x=-2:2,
 end
 % you could have created points less than 1, cap it at 1
 % do the same for greater than dim, as that is out of bounds of the image
+
+% invert y-axis to print correctly
+mat(:,2) = dim - mat(:, 2) ; 
+        
 mat(mat < 1) = 1;
 mat(mat > dim) = dim;

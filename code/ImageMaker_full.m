@@ -30,8 +30,6 @@ while line ~= -1,
         % get this line of data for this finger
         mat = fingers(out, dim, i);
         mat = mat(~any(isnan(mat),2),:);
-        % invert y-axis to print correctly
-        mat(:,2) = dim - mat(:, 2) ; 
         % calculate the linear indices
         xy_indices = sub2ind(sizep, mat(:,2), mat(:,1));    
         xz_indices = sub2ind(sizep, mat(:,3), mat(:,1));
@@ -63,14 +61,23 @@ for i=1:total,
     [row, col] = find(temp);       
     xrange = max(col) - min(col);
     yrange = max(row) - min(row);
-    if xrange > yrange,
-        maxR = min([min(row) + yrange/2 + xrange/2, dim]) ;
-        minR = max([min(row) + yrange/2 - xrange/2, 1]) ;
-        temp = temp(minR:maxR,min(col):max(col)) ;
+    if max([xrange, yrange]) >= sampleSize,
+        if xrange > yrange,
+            maxR = int64(min([min(row) + yrange/2 + xrange/2, dim])) ;
+            minR = int64(max([min(row) + yrange/2 - xrange/2, 1])) ;
+            temp = temp(minR:maxR,min(col):max(col)) ;
+        else
+            maxC = int64(min([min(col) + xrange/2 + yrange/2, dim])) ;
+            minC = int64(max([min(col) + xrange/2 - yrange/2, 1])) ;
+            temp = temp(min(row):max(row),minC:maxC);
+        end;
     else
-        maxC = min([min(col) + xrange/2 + yrange/2, dim]) ;
-        minC = max([min(col) + xrange/2 - yrange/2, 1]) ;
-        temp = temp(min(row):max(row),minC:maxC);
+        % very small gesture was performed, don't crop fully
+        maxR = int64(min([min(row) + yrange/2 + sampleSize/2, dim])) ;
+        minR = int64(max([min(row) + yrange/2 - sampleSize/2, 1])) ;
+        maxC = int64(min([min(col) + xrange/2 + sampleSize/2, dim])) ;
+        minC = int64(max([min(col) + xrange/2 - sampleSize/2, 1])) ;
+        temp = temp(minR:maxR,minC:maxC);
     end;
     if isempty(temp),
         q(:,:,i) = zeros(sampleSize, sampleSize);  

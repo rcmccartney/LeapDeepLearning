@@ -1,8 +1,9 @@
 function [net, info] = cnn_leap(varargin)
 % Here activated pixels from the Leap device are treated as a binary 0/1
 
-%run(fullfile('C:\Users\Henry\Box Sync\Projects\matconvnet-master', ...
-%    'matlab', 'vl_setupnn.m')) ;
+run(fullfile('C:\Users\Henry\Box Sync\Projects\matconvnet-master', ...
+    'matlab', 'vl_setupnn.m')) ;
+addpath('code') ;
 
 opts.dataDir = fullfile('data');
 opts.expDir = fullfile('data', 'leap-binary-full');
@@ -56,7 +57,17 @@ net.layers{end+1} = struct('type', 'pool', ...
                            'stride', 2, ...
                            'pad', 0) ;
 net.layers{end+1} = struct('type', 'conv', ...
-                           'filters', f*randn(9,9,50,500, 'single'),...
+                           'filters', f*randn(9,10,50,300, 'single'),...
+                           'biases', zeros(1,300,'single'), ...
+                           'stride', 1, ...
+                           'pad', 0) ;
+net.layers{end+1} = struct('type', 'pool', ...
+                           'method', 'max', ...
+                           'pool', [2 2], ...
+                           'stride', 2, ...
+                           'pad', 0) ;
+net.layers{end+1} = struct('type', 'conv', ...
+                           'filters', f*randn(13,25,300,500, 'single'),...
                            'biases', zeros(1,500,'single'), ...
                            'stride', 1, ...
                            'pad', 0) ;
@@ -109,7 +120,7 @@ end
 % specific to the dataset
 top = 'LeapData';
 linesToSkip = 2;
-dim = 200;
+dim = 200 ;
 sampleSize = 50 ; 
 %set up the images to use (5 fingers x 3 planes)
 numfingers = 5 ; 
@@ -157,7 +168,7 @@ for i=1:length(directoryNames),
                     % need to make image in range 0 to 1
                     writeVideo(aviobj,mat2gray(image));    
                 end;
-                %str = input('Keep this image? (Enter-yes/N-no) ','s');
+                % str = input('Keep this image? (Enter-yes/N-no) ','s');
                 % prompt user to keep an image or not
                 %if strcmp('', str),
                     images(:,:,index) = image;
@@ -182,7 +193,7 @@ for i=1:length(directoryNames),
         close(aviobj);
     end;
 end;
-fclose(fileID);
+%fclose(fileID);
 
 % mix up the classes 
 shuffle = randperm(size(output,2));
