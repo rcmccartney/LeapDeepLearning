@@ -157,7 +157,7 @@ for i=1:length(directoryNames),
                     % need to make image in range 0 to 1
                     writeVideo(aviobj,mat2gray(image));    
                 end;
-                str = input('Keep this image? (Enter-yes/N-no) ','s');
+                %str = input('Keep this image? (Enter-yes/N-no) ','s');
                 % prompt user to keep an image or not
                 %if strcmp('', str),
                     images(:,:,index) = image;
