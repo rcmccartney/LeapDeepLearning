@@ -7,15 +7,17 @@ run(fullfile('C:\Users\Henry\Box Sync\Projects\matconvnet-master',...
 opts.dataDir = fullfile('data','mnist') ;
 opts.expDir = fullfile('data','mnist-baseline') ;
 opts.imdbPath = fullfile(opts.expDir, 'imdb.mat');
-opts.train.batchSize = 100 ;
-opts.train.numEpochs = 100 ;
+opts.train.batchSize = 500 ;
+opts.train.numEpochs = 105 ;
 opts.train.continue = true ;
 
-% #############  ONLY CHANGE ###############
+% #############  CHANGES ###############
 opts.train.useGpu = true ;
-% #############  ONLY CHANGE ###############
+opts.train.learningRate = [0.001*ones(1,20) 0.0001*ones(1,40) 0.00001*ones(1,40)]; 
+opts.train.weightDecay = 0.0005 ;
+opts.momentum = 0.90 ;
+% #############  CHANGES ###############
 
-opts.train.learningRate = 0.001 ;
 opts.train.expDir = opts.expDir ;
 opts = vl_argparse(opts, varargin) ;
 
