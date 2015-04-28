@@ -2,6 +2,7 @@
 % First visualizes the images being trained
 % Runs the declared CNN network 
 % Then visualizes the first layer of features
+% Uses displayData from Andrew Ng's Machine Learning
 
 addpath code
 input('Visualizing a subset of MNIST. Press Enter')
