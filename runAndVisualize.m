@@ -1,5 +1,7 @@
-% runs the declared CNN network and then visualizes the 
-% first layer of features
+% Author: Rob McCartney
+% First visualizes the images being trained
+% Runs the declared CNN network 
+% Then visualizes the first layer of features
 
 addpath code
 input('Visualizing a subset of MNIST. Press Enter')
