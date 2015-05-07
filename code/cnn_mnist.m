@@ -8,7 +8,7 @@ opts.dataDir = fullfile('data','mnist') ;
 opts.expDir = fullfile('data','mnist-baseline') ;
 opts.imdbPath = fullfile(opts.expDir, 'imdb.mat');
 opts.train.batchSize = 500 ;
-opts.train.numEpochs = 105 ;
+opts.train.numEpochs = 41 ;
 opts.train.continue = true ;
 
 % #############  CHANGES ###############
